@@ -25,5 +25,6 @@ reliance:
     cannot tell those apart
 checked:
 - 'docs-platform: no-docs-host'
+- doc.autoxing.com (Documentation)
 - autoxing.com (Website)
 note: no vendor fingerprint on any host the record names; a hand-built surface, or hosts the pipeline has not yet found

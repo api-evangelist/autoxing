@@ -28,6 +28,9 @@ hosts:
   - contract-discovery
   - well-known
   types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
   - Website
   serves: []
   registrable_domain: autoxing.com
@@ -35,12 +38,14 @@ hosts:
   relation: own
 - host: doc.autoxing.com
   found_by:
+  - pointer
   - probed
   - site-links
   - docs-index
   - contract-discovery
   - well-known
-  types: []
+  types:
+  - Documentation
   serves:
   - docs
   registrable_domain: autoxing.com
