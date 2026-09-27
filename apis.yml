@@ -1,23 +1,67 @@
 aid: autoxing
+
 name: Autoxing
-description: 'Autoxing is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'AutoXing is a leading provider of intelligent robot services based on autonomous driving technology. The company focuses on AGV and AMR robots for factories, logistics, restaurants, and hotels, aiming to empower smart retail and improve efficiency through AI-driven navigation and big data integration. AutoXing’s mission is to use smart technology to enable a better life, offering a range of autonomous delivery vehicles, robot chassis, and customized solutions for various industries.'
+
 url: https://raw.githubusercontent.com/api-evangelist/autoxing/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- Robotics
+- Automation
+- AI
+- Logistics
+- Manufacturing
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/autoxing-hosts.yml
+- type: TermsOfService
+  url: https://autoxing.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://autoxing.com/privacy-policy
+- type: Newsroom
+  url: https://autoxing.com/news/category/news
+- type: Documentation
+  url: https://doc.autoxing.com/
+- type: DomainSecurity
+  url: security/autoxing-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/autoxing
+  url: https://autoxing.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation at https://doc.autoxing.com/ provides no machine‑readable OpenAPI or other contract.
+  evidence:
+    - url: https://doc.autoxing.com/
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
